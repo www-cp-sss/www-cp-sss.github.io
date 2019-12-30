@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 800px;
+            height: 600px;
+            position: relative;
+            background-color: #ccc;
+            left: 0;
+            top: 0;
+            background-image: url("./bg - 2本.png");
+            background-size: 800px 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="button" value="开始游戏" id="btn1">
+    <input type="button" value="暂停游戏" id="btn2">
+    <input type="button" name="" id="btn" value="万山绿帽数:0">
+    <div id="box"></div>
+</body>
+
+</html>
+<script src="./food.js"></script>
+<script src="./snake.js"></script>
+<script src="./game.js"></script>
+<script>
+    let map = document.querySelector('#box')
+    let count = 0;
+    let btn = document.querySelector('#btn')
+    let btn1 = document.querySelector('#btn1')
+    let btn2 = document.querySelector('#btn2')
+        // 创建一个构造函数,用来保存食物的大小
+    let g1 = new Game(map);
+    g1.start();
+</script>

@@ -19,10 +19,17 @@
 
 </html>
 <script>
-    $('body').keydown(function(e) {
+    $('body').keydown(function (e) {
         let name = $('#search').val();
-        if (e.keyCode == 13&&name=='飞机') {
-           window.location.href = "./html5-fly/play.html"
+        switch (e.keyCode) {
+            case 13:
+                if (name == '飞机') {
+                    window.location.href = './html5-fly/play.html'
+                } else if (name == '推箱子') {
+                    window.location.href = './推箱子/index.html'
+                } else if (name == '贪吃蛇') {
+                    window.location.href = './贪吃蛇/index.html'
+                }
         }
     })
 </script>
