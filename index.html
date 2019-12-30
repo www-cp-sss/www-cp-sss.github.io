@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-1.12.4.js"></script>
 </head>
+
 <body>
     <div class="bar">
         <input type="text" id="search">
     </div>
 </body>
+
 </html>
+<script>
+    $('body').keydown(function(e) {
+        let name = $('#search').val();
+        if (e.keyCode == 13&&name=='飞机') {
+           window.location.href = "./html5-fly/play.html"
+        }
+    })
+</script>

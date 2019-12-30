@@ -2,7 +2,7 @@ body {
   margin: 0 auto;
   width: 1366px;
   height: 625px;
-  background-image: url("./../images/bg\ -\ 副本11.png");
+  background-image: url("../images/bg\ -\ 副本11.png");
   background-size: 100%;
   position: relative;
 }
@@ -16,4 +16,5 @@ body {
   height: 40px;
   font-size: 24px;
   color: #fff;
+  border-radius: 20px;
 }
